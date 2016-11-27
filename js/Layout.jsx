@@ -1,12 +1,11 @@
 const React = require('react')
+const { element } = React.PropTypes
 
 const Layout = (props) => (
   <div className='app-container'>
     {props.children}
   </div>
 )
-
-const { element } = React.PropTypes
 
 Layout.propTypes = {
   children: element.isRequired
